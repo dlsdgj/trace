@@ -1,38 +1,92 @@
 # Trace
 
-> Quickly match and mark selected text across your vault with visual highlights.
+> Outline navigation, minimap hover, match highlighting, and vault-wide search for Obsidian.
 
-划词即搜，全库高亮。在编辑器中选中任意文本，Trace 自动在整个仓库中搜索匹配项并高亮标注，结果以悬浮列表呈现。
+大纲导航 · Minimap 悬停 · Match 匹配高亮 · 全库搜索。Trace 为长文档阅读提供可视化定位与知识标记能力。
 
-> Select any text in the editor — Trace instantly searches your entire vault for matches and highlights them, with results in a floating list.
+> Outline navigation · Minimap hover · Match highlighting · Vault-wide search. Trace provides visual positioning and knowledge marking for long-document reading.
+
+## 功能演示
+
+> ## Demo
+
+### Minimap × 大纲
+
+悬停 minimap 自动展开大纲面板，文档滚动与大纲高亮实时联动。
+
+> Hover the minimap to auto-expand the outline panel; document scroll and outline highlighting are synced in real time.
+
+![Minimap × Outline](images/demo-minimap-outline.gif)
+
+### 搜索
+
+划词即搜，全库匹配结果以悬浮列表呈现，支持缓存与手动刷新。
+
+> Select text to search the entire vault; results appear in a floating list with caching and manual refresh.
+
+![Search](images/demo-search.gif)
+
+### Match 匹配高亮
+
+选中文本全库匹配并高亮标注，Pin 图标标记关键位置。
+
+> Selected text is matched and highlighted across the vault; pin icons mark key locations.
+
+![Match](images/demo-match.gif)
+
+### 大纲视图
+
+大纲面板支持 Title / Group / Dot / Matrix 四种视图切换。
+
+> The outline panel supports four views: Title / Group / Dot / Matrix.
+
+**Group 分组视图** — 按颜色分类分组浏览标记内容：
+
+> **Group view** — Browse marked content grouped by color category:
+
+![Group](images/outline-group.png)
+
+**Matrix 矩阵视图** — 大纲结构与分类标记的交叉矩阵：
+
+> **Matrix view** — Cross-matrix of outline structure and category markers:
+
+![Matrix](images/outline-matrix.png)
 
 ## 核心功能
 
 > ## Features
 
-- **划词即搜** — 选中编辑器文本即后台全库搜索，匹配项实时高亮
+- **大纲** — 悬停 minimap 自动展开，Title / Group / Dot / Matrix 四种视图；文档滚动与大纲高亮双向联动
 
-  > **Search on selection** — Selecting text in the editor triggers a background vault-wide search; matches are highlighted in real time.
+  > **Outline** — Auto-expand on minimap hover; four views (Title / Group / Dot / Matrix); bidirectional sync between document scroll and outline highlight.
 
-- **悬浮结果列表** — 功能区按钮 + 悬浮球，鼠标悬停展开搜索结果，支持文件数 / 匹配数统计
+- **Minimap** — 编辑器右侧缩略条，悬停触发大纲 / 搜索窗口，4 条独立可拖边界分区
 
-  > **Floating result list** — Ribbon icon + floating toggle; hover to expand results with file/match counts.
+  > **Minimap** — Thumbnail bar on the editor right edge; hover triggers outline / search windows; 4 independent draggable zone boundaries.
 
-- **全库穷尽搜索** — 搜索所有文件内容中的匹配项，不限于已打开的文件
+- **Match** — 划词全库匹配高亮，Pin 图标标记关键位置，多色分类标记（圆点 / 方块），计数气泡
 
-  > **Exhaustive search** — Searches match content across all files in the vault, not just open ones.
+  > **Match** — Selection triggers vault-wide match highlighting; pin icons mark key positions; multi-color category markers (dots / squares); counter bubble.
 
-- **搜索缓存** — 内存 + 磁盘双层缓存；有缓存时悬停展开不自动重搜，点击刷新按钮手动触发
+- **搜索** — 划词即后台全库搜索，内存 + 磁盘双层缓存，有缓存时悬停不自动重搜，手动刷新按钮
 
-  > **Search cache** — Two-tier memory + disk cache; hovering with cached results won't re-search. Click the refresh button to re-search manually.
+  > **Search** — Selection triggers background vault-wide search; two-tier memory + disk cache; hovering with cache won't re-search; manual refresh button.
 
-- **搜索词管理** — 最近 / 收藏 / 置顶，快速切换关键词
+## 设置
 
-  > **Search term management** — Recent / favorite / pinned searches for quick keyword switching.
+> ## Settings
 
-- **多关键词搜索** — 支持多关键词组合搜索
+**Outline** — 悬停触发开关、高亮颜色代码配置（10 种预设颜色标记）：
 
-  > **Multi-keyword search** — Combine multiple keywords in a single search.
+> **Outline** — Hover trigger toggle, highlight color code config (10 preset color markers):
+
+![Settings - Outline](images/settings-outline.png)
+
+**Match** — Pin 图标模式 / 大小 / 透明度 / 偏移、6 种循环配色方案、计数气泡：
+
+> **Match** — Pin icon mode / size / opacity / offset, 6 cycling color schemes, counter bubble:
+
+![Settings - Match](images/settings-match.png)
 
 ## 安装
 
