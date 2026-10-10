@@ -18,9 +18,7 @@
 
 ![Minimap × Outline](images/demo-minimap-outline.gif)
 
-### 搜索
 
-划词即搜，全库匹配结果以悬浮列表呈现，支持缓存与手动刷新。
 
 > Select text to search the entire vault; results appear in a floating list with caching and manual refresh.
 
