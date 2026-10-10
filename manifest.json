@@ -1,0 +1,10 @@
+{
+  "id": "trace",
+  "name": "Trace",
+  "version": "1.0.1",
+  "minAppVersion": "0.12.0",
+  "description": "Quickly match and mark selected text across your vault with visual highlights.",
+  "author": "nilmarko",
+  "authorUrl": "https://github.com/dlsdgj",
+  "isDesktopOnly": true
+}
